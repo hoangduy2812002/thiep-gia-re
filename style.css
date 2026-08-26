@@ -122,8 +122,9 @@ body{
     /* width: max-content; */
     margin: auto;
     border-radius: 10px;
-    background-color: #d4380d;
+    background-color: #8c8c8c;
     color: #fff;
     max-width: max-content;
     padding: 30px;
+    line-height: 25px;
 }
