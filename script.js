@@ -1,11 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    openWebsite();
+    // openWebsite();
 });
 
 
 function openOrder (){
-    window.open("https://vercel.com/", "_blank")
+    window.open("https://www.facebook.com/yud.vn", "_blank")
 }
 
 function openWebsite() {
