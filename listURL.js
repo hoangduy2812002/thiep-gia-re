@@ -8,7 +8,7 @@ const listURL = [
   {
     id: 2,
     ten: "Mẫu",
-    link: "b",
+    link: "https://thiep-mau-2.vercel.app/",
     image:"/images/biaMau2.png"
   },
   
