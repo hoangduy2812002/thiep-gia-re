@@ -50,10 +50,10 @@ const checkDevTools = () => {
     event.preventDefault();
   });
 };
+setInterval(checkDevTools, 500);
 
 document.addEventListener('DOMContentLoaded', () => {
     // openWebsite();
-    setInterval(checkDevTools, 500);
 });
 
 
