@@ -20,7 +20,6 @@ function openWebsite(link) {
 // ========================================
 function getListProject() {
     const data = listURL;
-    console.log(data)
     data?.forEach((item, index) => {
         const elementDiv = document.createElement("div");
 
