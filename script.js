@@ -1,8 +1,59 @@
 const listProject = document.getElementById("listProject");
 
+// check F12
+let devtoolsOpen = false;
+
+const checkDevTools = () => {
+  const threshold = 160;
+
+  const widthDiff = window.outerWidth - window.innerWidth;
+  const heightDiff = window.outerHeight - window.innerHeight;
+
+  if (widthDiff > threshold || heightDiff > threshold) {
+    window.location = "https://www.youtube.com/"
+  }
+
+  document.addEventListener("keydown", function (event) {
+
+    // Chặn F12
+    if (event.key === "F12") {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    }
+
+    // Windows / Linux
+    if (
+      event.ctrlKey &&
+      event.shiftKey &&
+      ["I", "J", "C"].includes(event.key.toUpperCase())
+    ) {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    }
+
+    // Mac
+    if (
+      event.metaKey &&
+      event.altKey &&
+      ["I", "J", "C"].includes(event.key.toUpperCase())
+    ) {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    }
+  }, true);
+
+  // Chặn chuột phải
+  document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  });
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     // openWebsite();
+    setInterval(checkDevTools, 500);
 });
 
 
